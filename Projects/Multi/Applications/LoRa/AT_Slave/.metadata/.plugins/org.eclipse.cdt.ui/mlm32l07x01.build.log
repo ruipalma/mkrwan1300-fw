@@ -1,0 +1,87 @@
+16:28:05 **** Incremental Build of configuration Debug for project mlm32l07x01 ****
+make all 
+Building file: C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c
+Invoking: MCU GCC Compiler
+C:\Users\ruipalma\stm32workspace\mkrwan1300-fw\Projects\Multi\Applications\LoRa\AT_Slave\SW4STM32\B-L072Z-LRWAN1\mlm32l07x01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -DSTM32L072xx -DUSE_B_L072Z_LRWAN1 -DUSE_FULL_LL_DRIVER -DREGION_EU868 -DREGION_AS923 -DREGION_AU915 -DREGION_CN470 -DREGION_CN779 -DREGION_EU433 -DREGION_IN865 -DREGION_KR920 -DREGION_US915 -DREGION_US915_HYBRID -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/inc" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/MLM32L07X01" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/STM32L0xx_HAL_Driver/Inc" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/CMSIS/Device/ST/STM32L0xx/Include" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/CMSIS/Include" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Middlewares/Third_Party/Lora/Crypto" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Middlewares/Third_Party/Lora/Mac" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Middlewares/Third_Party/Lora/Phy" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Middlewares/Third_Party/Lora/Utilities" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/X_NUCLEO_IKS01A1" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Middlewares/Third_Party/Lora/Core" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/Components/Common" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/Components/hts221" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/Components/lps22hb" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/Components/lps25hb" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/Components/sx1276" -I"C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Drivers/BSP/B-L072Z-LRWAN1"  -Os -g3 -Wall -fmessage-length=0 -Wno-strict-aliasing -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Projects/AT_Slave/at.d" -MT"Projects/AT_Slave/at.o" -o "Projects/AT_Slave/at.o" "C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c"
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_DevAddr_set':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:216:2: warning: implicit declaration of function 'lora_config_devaddr_set'; did you mean 'lora_config_reqack_set'? [-Wimplicit-function-declaration]
+  lora_config_devaddr_set(DevAddr);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  lora_config_reqack_set
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_DevAddr_get':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:224:23: warning: implicit declaration of function 'lora_config_devaddr_get'; did you mean 'lora_config_deveui_get'? [-Wimplicit-function-declaration]
+   print_uint32_as_02x(lora_config_devaddr_get());
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+                       lora_config_deveui_get
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_NetworkID_get':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:231:23: warning: implicit declaration of function 'lora_config_networkid_get'; did you mean 'lora_config_reqack_get'? [-Wimplicit-function-declaration]
+   print_uint32_as_02x(lora_config_networkid_get());
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       lora_config_reqack_get
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_NetworkID_set':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:240:3: warning: implicit declaration of function 'lora_config_networkid_set'; did you mean 'lora_config_reqack_set'? [-Wimplicit-function-declaration]
+   lora_config_networkid_set(NetworkID);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+   lora_config_reqack_set
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_NwkSKey_get':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:289:16: warning: implicit declaration of function 'lora_config_nwkskey_get'; did you mean 'lora_config_appkey_get'? [-Wimplicit-function-declaration]
+   print_16_02x(lora_config_nwkskey_get());
+                ^~~~~~~~~~~~~~~~~~~~~~~
+                lora_config_appkey_get
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:289:16: warning: passing argument 1 of 'print_16_02x' makes pointer from integer without a cast [-Wint-conversion]
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:118:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int'
+ static void print_16_02x(uint8_t *pt);
+             ^~~~~~~~~~~~
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_NwkSKey_set':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:302:3: warning: implicit declaration of function 'lora_config_nwkskey_set'; did you mean 'lora_config_appkey_set'? [-Wimplicit-function-declaration]
+   lora_config_nwkskey_set(NwkSkey);
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   lora_config_appkey_set
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_AppSKey_get':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:309:16: warning: implicit declaration of function 'lora_config_appskey_get'; did you mean 'lora_config_appkey_get'? [-Wimplicit-function-declaration]
+   print_16_02x(lora_config_appskey_get());
+                ^~~~~~~~~~~~~~~~~~~~~~~
+                lora_config_appkey_get
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:309:16: warning: passing argument 1 of 'print_16_02x' makes pointer from integer without a cast [-Wint-conversion]
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:118:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int'
+ static void print_16_02x(uint8_t *pt);
+             ^~~~~~~~~~~~
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_AppSKey_set':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:322:3: warning: implicit declaration of function 'lora_config_appskey_set'; did you mean 'lora_config_appkey_set'? [-Wimplicit-function-declaration]
+   lora_config_appskey_set(AppSKey);
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   lora_config_appkey_set
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_SendV2':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:920:22: warning: pointer targets in passing argument 1 of 'lora_send' differ in signedness [-Wpointer-sign]
+   status = lora_send(data, length, format_send_v2, 1);
+                      ^~~~
+In file included from C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:52:0:
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/inc/lora.h:250:17: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ LoRaMacStatus_t lora_send(const char *buf, unsigned size, unsigned binary, unsigned raw);
+                 ^~~~~~~~~
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c: In function 'at_SendV2Confirmation':
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:947:22: warning: pointer targets in passing argument 1 of 'lora_send' differ in signedness [-Wpointer-sign]
+   status = lora_send(data, length, format_send_v2, 1);
+                      ^~~~
+In file included from C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c:52:0:
+C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/inc/lora.h:250:17: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ LoRaMacStatus_t lora_send(const char *buf, unsigned size, unsigned binary, unsigned raw);
+                 ^~~~~~~~~
+Finished building: C:/Users/ruipalma/stm32workspace/mkrwan1300-fw/Projects/Multi/Applications/LoRa/AT_Slave/src/at.c
+ 
+Building target: mlm32l07x01.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32L072CZYx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "mlm32l07x01.elf" @"objects.list"   -lm
+Finished building target: mlm32l07x01.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "mlm32l07x01.elf" "mlm32l07x01.bin"
+arm-none-eabi-size "mlm32l07x01.elf"
+   text	   data	    bss	    dec	    hex	filename
+  76472	    492	  10068	  87032	  153f8	mlm32l07x01.elf
+ 
+
+16:28:07 Build Finished (took 2s.324ms)
+
